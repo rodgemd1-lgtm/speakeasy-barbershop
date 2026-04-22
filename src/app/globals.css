@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'GFS Didot', serif;
+  --font-body: 'Montserrat', sans-serif;
+  
+  --color-background: #000000;
+  --color-foreground: #fafafa;
+  --color-card: #111111;
+  --color-card-foreground: #fafafa;
+  --color-primary: #FFCC00;
+  --color-primary-foreground: #000000;
+  --color-secondary: #1a1a1a;
+  --color-secondary-foreground: #fafafa;
+  --color-muted: #1a1a1a;
+  --color-muted-foreground: #737373;
+  --color-accent: #FFCC00;
+  --color-accent-foreground: #000000;
+  --color-border: #1a1a1a;
+  --color-input: #1a1a1a;
+  --color-ring: #FFCC00;
+  --color-destructive: #ef4444;
+  --radius: 0.5rem;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-foreground);
+  background: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.bookshelf-entrance { position: relative; overflow: hidden; }
+.bookshelf-entrance::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent, rgba(255,204,0,0.05), transparent);
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #FFCC00, transparent);
+}
+
+.service-card { transition: all 0.3s ease; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 0 30px rgba(255,204,0,0.15); }
+
+.barber-card { transition: all 0.3s ease; }
+.barber-card:hover { box-shadow: 0 0 40px rgba(255,204,0,0.2); border-color: rgba(255,204,0,0.3); }
