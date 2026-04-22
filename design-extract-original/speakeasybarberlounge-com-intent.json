@@ -1,0 +1,170 @@
+{
+  "pageIntent": {
+    "type": "landing",
+    "confidence": 0.45,
+    "path": "/",
+    "title": "Men's Barber Shop in Denver | Speakeasy Barber Lounge",
+    "description": "Get the best men's haircut in Denver at our top-rated barbershop. Experience expert styling and a fresh look. Book your appointment today!",
+    "signals": [
+      {
+        "kind": "url",
+        "type": "landing",
+        "weight": 0.45,
+        "detail": "root-path"
+      }
+    ],
+    "alternates": [],
+    "needsSmart": true
+  },
+  "sectionRoles": {
+    "sections": [
+      {
+        "index": 0,
+        "tag": "header",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.4,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 154.578125
+        },
+        "buttonCount": 5,
+        "cardCount": 27,
+        "slots": {
+          "ctaCount": 5,
+          "lede": "SERVICES\nPOLICIES\nGALLERY\nBARBERS\nCAREERS\nFAQS\nBOOK NOW"
+        },
+        "needsSmart": true
+      },
+      {
+        "index": 1,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 272,
+          "y": 33.28125,
+          "w": 736,
+          "h": 88
+        },
+        "buttonCount": 0,
+        "cardCount": 12,
+        "slots": {
+          "lede": "SERVICES\nPOLICIES\nGALLERY\nBARBERS\nCAREERS\nFAQS"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 2,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "buttonCount": 0,
+        "cardCount": 14,
+        "slots": {
+          "lede": "Home\nServices\nBarbers\nGallery\nPolicies\nCareers\nFAQs"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 3,
+        "tag": "main",
+        "role": "feature-grid",
+        "subrole": null,
+        "confidence": 0.8,
+        "heading": "A $10 gift to first time clients from the Speakeasy team\n",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 11144.59375
+        },
+        "buttonCount": 14,
+        "cardCount": 10,
+        "slots": {
+          "heading": "A $10 gift to first time clients from the Speakeasy team\n",
+          "subheadings": [
+            "",
+            "",
+            "",
+            "Our Barbershop Services"
+          ],
+          "ctaCount": 14,
+          "lede": "Our Barbershop Services\nAll of these features come with every haircut service, and they are included in the price."
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 4,
+        "tag": "footer",
+        "role": "footer",
+        "subrole": null,
+        "confidence": 0.95,
+        "heading": "Business hours:",
+        "bounds": {
+          "x": 0,
+          "y": 11144.59375,
+          "w": 1280,
+          "h": 1935.171875
+        },
+        "buttonCount": 0,
+        "cardCount": 22,
+        "slots": {
+          "heading": "Business hours:",
+          "subheadings": [
+            "Location:",
+            "Contact:"
+          ],
+          "lede": "Services\nPolicies\nGallery\nBarbers\nCareers\nFAQs\nBusiness hours:"
+        },
+        "needsSmart": false
+      },
+      {
+        "index": 5,
+        "tag": "nav",
+        "role": "nav",
+        "subrole": null,
+        "confidence": 0.9,
+        "heading": null,
+        "bounds": {
+          "x": 0,
+          "y": 11878.59375,
+          "w": 1280,
+          "h": 16
+        },
+        "buttonCount": 0,
+        "cardCount": 12,
+        "slots": {
+          "lede": "Services\nPolicies\nGallery\nBarbers\nCareers\nFAQs"
+        },
+        "needsSmart": false
+      }
+    ],
+    "counts": {
+      "nav": 4,
+      "feature-grid": 1,
+      "footer": 1
+    },
+    "readingOrder": [
+      "nav",
+      "nav",
+      "feature-grid",
+      "nav",
+      "footer",
+      "nav"
+    ]
+  }
+}

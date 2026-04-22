@@ -1,0 +1,83 @@
+{
+  "openGraph": {
+    "locale": "en_US",
+    "type": "website",
+    "title": "Men's Barber Shop in Denver | Speakeasy Barber Lounge",
+    "description": "Get the best men's haircut in Denver at our top-rated barbershop. Experience expert styling and a fresh look. Book your appointment today!",
+    "url": "https://speakeasybarberlounge.com/",
+    "site_name": "Speakeasy",
+    "image": "https://speakeasybarberlounge.com/wp-content/uploads/2023/10/cropped-photo_2023-10-08_21-53-53.jpg",
+    "image:width": "892",
+    "image:height": "686",
+    "image:type": "image/jpeg"
+  },
+  "twitter": {
+    "card": "summary_large_image"
+  },
+  "description": "Get the best men's haircut in Denver at our top-rated barbershop. Experience expert styling and a fresh look. Book your appointment today!",
+  "canonical": null,
+  "themeColor": null,
+  "viewport": "width=device-width, initial-scale=1.0",
+  "favicons": [
+    {
+      "rel": "icon",
+      "href": "https://speakeasybarberlounge.com/wp-content/uploads/2023/10/cropped-photo_2023-10-08_21-53-53-1-32x32.jpg",
+      "sizes": "32x32",
+      "type": ""
+    },
+    {
+      "rel": "icon",
+      "href": "https://speakeasybarberlounge.com/wp-content/uploads/2023/10/cropped-photo_2023-10-08_21-53-53-1-192x192.jpg",
+      "sizes": "192x192",
+      "type": ""
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://speakeasybarberlounge.com/wp-content/uploads/2023/10/cropped-photo_2023-10-08_21-53-53-1-180x180.jpg",
+      "sizes": "",
+      "type": ""
+    }
+  ],
+  "manifest": null,
+  "structuredData": [
+    {
+      "type": "Organization",
+      "name": "Speakeasy Barber Lounge LLC",
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Speakeasy Barber Lounge LLC\",\"alternateName\":\"Speakeasy Barber Lounge\",\"url\":\"https://speakeasybarberlounge.com\",\"logo\":\"https://speakeasybarberlounge.com/wp-content/uploads/2023/10/cropped-photo_2023-10-08_21-53-53.jpg\",\"description\":\"Classic cuts and the latest trends are on offer at this speakeasy-style barber lounge, which serves "
+    },
+    {
+      "type": "Organization",
+      "name": "Speakeasy",
+      "sample": "{\"@context\":\"https://schema.org/\",\"@type\":\"Organization\",\"@id\":\"https://speakeasybarberlounge.com#Organization\",\"name\":\"Speakeasy\",\"url\":\"https://speakeasybarberlounge.com\",\"sameAs\":[],\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://speakeasybarberlounge.com/wp-content/uploads/2023/10/cropped-photo_2023-10-08_21-53-53.jpg\",\"width\":\"892\",\"height\":\"686\"}}"
+    },
+    {
+      "type": "WebPage",
+      "name": "Best Barber Shop in Denver",
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://speakeasybarberlounge.com/#barberservices\",\"datePublished\":\"2020-01-15T09:00:00-07:00\",\"dateModified\":\"2026-02-13T10:00:00-07:00\",\"abstract\":\"Speakeasy Barber Lounge - Premier barber shop in Denver, CO offering expert haircuts, beard trims, hot towel shaves, and men's grooming services. Walk-ins welcome!\",\"accessMode\":[\"textual\",\"vi"
+    },
+    {
+      "type": "Service",
+      "name": null,
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"serviceType\":\"Barber shop services\",\"@id\":\"https://speakeasybarberlounge.com/#barberservices\",\"sameAs\":[\"https://www.google.com/search?kgmid=/g/11vsrwh_yn\",\"https://www.facebook.com/speakeasybarberlounge\",\"https://www.instagram.com/speakeasybarberlounge\",\"https://en.wikipedia.org/wiki/Barbershop\",\"https://www.wikidata.org/wiki/Q21980641\"],\"offers"
+    },
+    {
+      "type": "FAQPage",
+      "name": null,
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How do I access the barber shop in Denver?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"<p>Enter the building, walk up the stairs to the 2nd floor and take a seat. Someone will greet you and walk you in to our hidden gem.</p>\"}},{\"@type\":\"Question\",\"name\":\"Do you wash hair?\",\"acceptedAnswer\":{\"@type\":\"Answe"
+    },
+    {
+      "type": "HairSalon",
+      "name": "Speakeasy Barber Lounge",
+      "sample": "{\"@context\":\"https://schema.org\",\"@type\":\"HairSalon\",\"name\":\"Speakeasy Barber Lounge\",\"description\":\"Classic cuts and the latest trends are on offer at this speakeasy-style barber lounge, which serves beer and whiskey.\",\"url\":\"https://speakeasybarberlounge.com/\",\"telephone\":\"(720) 466-3567\",\"email\":\"contact@speakeasybarberlounge.com\",\"image\":\"https://speakeasybarberlounge.com/wp-content/uploads/20"
+    }
+  ],
+  "score": {
+    "hasOg": true,
+    "hasTwitter": true,
+    "hasDescription": true,
+    "hasCanonical": false,
+    "hasStructuredData": true,
+    "hasFavicon": true,
+    "hasThemeColor": false
+  }
+}

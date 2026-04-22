@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme {
+  --color-original-primary: #61ce70;
+  --color-original-secondary: #ffcc00;
+  --color-original-accent: #6ec1e4;
+  --color-original-dark: #000000;
+  --color-original-text: #333333;
+  --color-original-mid: #7a7a7a;
+  --color-original-subtle: #494c4f;
+  --color-original-light: #ffffff;
+  --color-original-pink: #cc3366;
+  --color-original-offwhite: #efefef;
+
+  --color-new-gold: #ffcc00;
+  --color-new-black: #000000;
+  --color-new-dark: #0a0a0a;
+  --color-new-surface: #1a1a1a;
+  --color-new-text: #ffffff;
+  --color-new-muted: rgba(255, 255, 255, 0.6);
+  --color-new-faint: rgba(255, 255, 255, 0.3);
+
+  --font-heading: "GFS Didot", serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+/* ─── Original Site Styles ────────────────────────────────────────── */
+.original-site {
+  font-family: -apple-system, "Roboto", sans-serif;
+  background: #000000;
+  color: #333333;
+}
+
+.original-site h1 {
+  font-family: "GFS Didot", serif;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 55px;
+}
+
+.original-site h2 {
+  font-family: "GFS Didot", serif;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 38px;
+}
+
+.original-site a, .original-site .nav-link {
+  color: #cc3366;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.original-site a:hover {
+  color: #ffcc00;
+}
+
+.original-site .btn-gold {
+  background: transparent;
+  color: #ffcc00;
+  padding: 20px 40px;
+  border-radius: 3px;
+  border: 1px solid #ffcc00;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s, background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.4s;
+}
+
+.original-site .btn-gold:hover {
+  background: #ffcc00;
+  color: #000000;
+  transform: scale(1.02);
+}
+
+.original-site .btn-green {
+  background: #61ce70;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.original-site .btn-green:hover {
+  background: #4bb85a;
+}
+
+.original-site .gradient-bar {
+  background: linear-gradient(12deg, rgb(255, 204, 0) 0%, rgba(242, 41, 91, 0) 40%);
+}
+
+/* ─── New Redesign Styles ────────────────────────────────────────── */
+.new-site {
+  font-family: "Montserrat", sans-serif;
+  background: #000000;
+  color: #ffffff;
+}
+
+.new-site h1, .new-site h2 {
+  font-family: "GFS Didot", serif;
+}
+
+.new-site .btn-gold-fill {
+  background: #ffcc00;
+  color: #000000;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+}
+
+.new-site .btn-gold-fill:hover {
+  background: #ffd633;
+  box-shadow: 0 0 30px rgba(255, 204, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+.new-site .btn-gold-outline {
+  background: transparent;
+  color: #ffcc00;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px solid #ffcc00;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.new-site .btn-gold-outline:hover {
+  background: rgba(255, 204, 0, 0.1);
+}
+
+/* ─── Toggle Button ────────────────────────────────────────── */
+.version-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  display: flex;
+  background: #1a1a1a;
+  border-radius: 999px;
+  padding: 4px;
+  border: 1px solid rgba(255, 204, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.version-toggle button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.version-toggle button.active {
+  background: #ffcc00;
+  color: #000000;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+}
+
+.version-toggle button:hover:not(.active) {
+  color: #ffcc00;
+}
+
+/* ─── Shared ────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
