@@ -1,0 +1,46 @@
+{
+  "capabilities": [
+    "Installable repo CLI entrypoint",
+    "Source-of-truth clone routing",
+    "README and capability discovery",
+    "client-work capability surface"
+  ],
+  "command": "speakeasy-barbershop",
+  "description": "SpeakEasy Barber Lounge - Denver's #1 Rated Barbershop. Next.js 16 website redesign with booking-first UX, AI chatbot, and gold-on-black brand.",
+  "github": {
+    "clone": "https://github.com/rodgemd1-lgtm/speakeasy-barbershop.git",
+    "mirror": "https://github.com/rodgemd1-lgtm/speakeasy-barbershop"
+  },
+  "install": {
+    "clone_optional": true,
+    "default_install_dir": "~/.local/bin",
+    "script": "install.sh"
+  },
+  "lane": "client-work",
+  "lane_label": "client delivery workspaces",
+  "name": "speakeasy-barbershop",
+  "primary_language": "TypeScript",
+  "proof": {
+    "generated_at": "2026-05-26T18:47:15Z",
+    "generated_by": "scripts/repositories/apply_repo_cli_contract.py",
+    "standard": "https://github.com/rodgemd1-lgtm/Startup-Intelligence-OS/blob/claude/rig-sovereign-audit-mesh/docs/repositories/repo-cli-standard.md"
+  },
+  "schema": "rig.repo-cli.v1",
+  "service_commands": [
+    {
+      "command": "npm run dev",
+      "name": "serve"
+    },
+    {
+      "command": "npm run build",
+      "name": "build"
+    }
+  ],
+  "slug": "speakeasy-barbershop",
+  "source_of_truth": {
+    "clone": "ssh://git@nas94f2ae.tail4d96b3.ts.net:2222/rig/speakeasy-barbershop.git",
+    "type": "qnap-gitea"
+  },
+  "status": "active-public",
+  "visibility": "public"
+}
