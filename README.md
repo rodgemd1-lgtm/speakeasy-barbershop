@@ -118,9 +118,12 @@ cd speakeasy-barbershop
 ## Verify
 
 ```bash
-# Run repo-specific tests, lint, typecheck, build, or smoke commands.
-# If no command exists yet, add one before promoting this README to final.
+npm ci
+./bin/speakeasy-barbershop doctor
+npm run build
 ```
+
+Deterministic first local smoke command: `npm run build`.
 
 ## Release And Proof Protocol
 
@@ -154,6 +157,12 @@ cd speakeasy-barbershop
 
 - Add or maintain a cold-reader README, setup command, test command, and ProofPacket path.
 - Keep GitHub topics, description, QNAP mirror, and consolidation status current.
+
+## V10 Looper Planning Proof
+
+- Planning proof path: `proof/looper-v10-cockpit/2026-05-29-rig-v10-plan.json`
+- Scope: planning/proof/safe setup only (no production implementation)
+- Includes: product promise, CLI/MCP readiness design, agent role routing, quality gates, weekly loop, blockers, and deterministic checks
 
 ---
 

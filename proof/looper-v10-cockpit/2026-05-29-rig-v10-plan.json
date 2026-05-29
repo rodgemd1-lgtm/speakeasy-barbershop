@@ -1,0 +1,108 @@
+{
+  "issue": "RIG V10: Git agent, CLI, MCP readiness design",
+  "generated_at": "2026-05-29T14:28:21Z",
+  "scope": "planning-proof-safe-setup-only",
+  "v10_product_promise": "A product-grade, deterministic repository surface for SpeakEasy Barber Lounge that supports human and agent workflows through documented CLI operations, proof artifacts, and explicit governance boundaries.",
+  "cli_surface": {
+    "entrypoint": "bin/speakeasy-barbershop",
+    "commands": [
+      "info",
+      "capabilities",
+      "services",
+      "clone",
+      "open",
+      "docs",
+      "doctor",
+      "help"
+    ],
+    "first_deterministic_local_smoke_command": "npm run build",
+    "additional_local_inspection_command": "./bin/speakeasy-barbershop doctor"
+  },
+  "mcp_surface": {
+    "status": "deferred",
+    "reason": "No MCP server/client implementation files are currently present. Add MCP only after product tools/resources/prompts and auth boundary owners are approved.",
+    "required_future_contract": {
+      "tools": [
+        "booking_availability_read",
+        "service_catalog_read",
+        "content_preview_render"
+      ],
+      "resources": [
+        "brand_tokens",
+        "service_menu",
+        "proof_packets"
+      ],
+      "prompts": [
+        "booking_assistant",
+        "barber_faq",
+        "release_proof_review"
+      ],
+      "auth_boundary": "public-read-only by default; private booking/customer data requires explicit human-approved auth design"
+    }
+  },
+  "agent_workflow": {
+    "roles": [
+      "planner",
+      "reviewer",
+      "fixer",
+      "qa"
+    ],
+    "model_routing_expectations": {
+      "planner": "high-reasoning model for decomposition and risk calls",
+      "reviewer": "high-reasoning model for architecture/security review",
+      "fixer": "standard coding model for scoped edits",
+      "qa": "fast model for repeatable command execution and proof capture"
+    },
+    "quality_gates": [
+      "gate_1_setup: npm ci succeeds",
+      "gate_2_smoke: npm run build succeeds",
+      "gate_3_cli_signal: ./bin/speakeasy-barbershop doctor output captured",
+      "gate_4_proof: update proof/looper-v10-cockpit artifact with blockers and command results",
+      "gate_5_human_approval: any deploy/publish/schedule/secret-boundary changes"
+    ]
+  },
+  "weekly_improvement_loop": {
+    "cadence": "weekly",
+    "required_behavior": [
+      "rerun deterministic checks",
+      "refresh proof artifact with timestamped blockers and readiness deltas",
+      "triage retryable planner/automation failures without deleting prior proof"
+    ],
+    "must_never_run_without_human_approval": [
+      "deployments",
+      "publishing packages",
+      "new recurring schedules",
+      "secret creation/rotation",
+      "private-data export/printing"
+    ]
+  },
+  "blockers_and_gaps": [
+    "No MCP server/client implementation or contract files yet.",
+    "No repository test suite currently exists (test files detected: 0).",
+    "README Verify section previously lacked explicit deterministic commands (now addressed).",
+    "Lint currently reports pre-existing unrelated errors in src/app/offer/page.tsx, src/app/refer/page.tsx, and tailwind.config.ts."
+  ],
+  "missing_apis": [
+    "No explicit booking API contract is documented in this repository.",
+    "No typed content API contract for service menu/offer/refer surfaces."
+  ],
+  "missing_secrets": [
+    "None required for planning-proof-safe-setup scope."
+  ],
+  "missing_docs": [
+    "MCP contract doc (tools/resources/prompts/auth boundaries).",
+    "Repository testing strategy doc (unit/e2e ownership and command matrix)."
+  ],
+  "missing_tests": [
+    "No existing automated test files; establish minimal deterministic smoke test ownership in a future approved implementation issue."
+  ],
+  "proof_paths": [
+    "proof/looper-v10-cockpit/2026-05-29-rig-v10-plan.json"
+  ],
+  "commands_executed_for_this_plan": [
+    "npm ci",
+    "npm run lint (fails due to pre-existing issues)",
+    "npm run build (passes)"
+  ],
+  "status": "planned-not-final-pass"
+}
